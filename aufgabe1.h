@@ -5,7 +5,7 @@
 #ifndef SYSPR_TEST1_PREPARE_AUFGABE1_H
 #define SYSPR_TEST1_PREPARE_AUFGABE1_H
 
-#define DEBUG true;
+#define DEBUG true
 
 void aufgabe1(char *argv[]);
 
