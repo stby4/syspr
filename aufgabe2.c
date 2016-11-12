@@ -23,3 +23,17 @@ void copyString(char *sCopy, char *sOriginal) {
         ++i;
     } while('\0' != sOriginal[i]);
 }
+
+int isEqualString(char *sOriginal, char *sCompare) {
+    int i = 0;
+
+    do {
+        if(sOriginal[i] != sCompare[i]) {
+            return 0;
+        }
+
+        ++i;
+    } while ('\0' != sOriginal[i]);
+
+    return 1;
+}
