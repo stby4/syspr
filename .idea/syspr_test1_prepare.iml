@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/aufgabe1.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/aufgabe2.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/aufgabe2.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/aufgabe5.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/aufgabe1.h" isTestSource="false" />

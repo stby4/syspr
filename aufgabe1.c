@@ -1,10 +1,9 @@
 //
 // Created by hinrich on 12.11.16.
 //
-#include <stdlib.h>
-#include <stdbool.h>
-#include <printf.h>
 
+#include <stdio.h>
+#include <stdlib.h>
 #include "aufgabe1.h"
 
 void aufgabe1(char *argv[]) {
