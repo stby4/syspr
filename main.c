@@ -4,10 +4,13 @@
 int main(int argc, char* argv[]) {
 
     // Aufgabe 1
-    //char *cParams1[] = {"", "0", "50"};
-    //aufgabe1(cParams1);
+    printf("== Aufgabe 1 ==\n");
+    char *cParams1[] = {"", "0", "50"};
+    aufgabe1(cParams1);
+
 
     // Aufgabe 2
+    printf("\n\n== Aufgabe 2 ==\n");
     char sTest[] = "abc";
     printf("\"%s\" hat %d Zeichen\n", sTest, getStringLength(sTest));
 
@@ -22,9 +25,20 @@ int main(int argc, char* argv[]) {
     iEqual = isEqualString(sTest, sCopy);
     printf("\"%s\" und \"%s\" sind gleich: %d\n", sTest, sCopy, iEqual);
 
+
+    // Aufgabe 3
+    printf("\n\n== Aufgabe 3 ==\n");
+    int iArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int iSum = arraySum1(iArray);
+    printf("Die Summe aller Elemente ist %d.\n", iSum);
+    arraySum2(iArray);
+    printf("Die Summe aller Elemente ist %d.\n", iSum);
+
+
     // Aufgabe 5
-    //char* cParams5[] = {"", "/home/hinrich/Downloads/copythis", "/home/hinrich/Downloads/tothis"};
-    //aufgabe5(cParams5);
+    printf("\n\n== Aufgabe 5 ==\n");
+    char* cParams5[] = {"", "/home/hinrich/Downloads/copythis", "/home/hinrich/Downloads/tothis"};
+    aufgabe5(cParams5);
 
     return 1;
 }
