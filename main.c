@@ -11,6 +11,11 @@ int main(int argc, char* argv[]) {
     char sTest[] = "abc";
     printf("\"%s\" hat %d Zeichen\n", sTest, getStringLength(sTest));
 
+    char sCopy[100];
+    copyString(sCopy, sTest);
+    sCopy[0] = 'd';
+    printf("Das Original ist \"%s\", aber die Kopie \"%s\".\n", sTest, sCopy);
+
     // Aufgabe 5
     //char* cParams5[] = {"", "/home/hinrich/Downloads/copythis", "/home/hinrich/Downloads/tothis"};
     //aufgabe5(cParams5);

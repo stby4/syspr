@@ -6,6 +6,7 @@
 #define SYSPR_TEST1_PREPARE_AUFGABE2_H
 
 
-int getStringLength(char *sString);
+int getStringLength(char *sText);
+void copyString(char *sCopy, char *sOriginal);
 
 #endif //SYSPR_TEST1_PREPARE_AUFGABE2_H
