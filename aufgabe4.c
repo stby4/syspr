@@ -9,9 +9,12 @@
 #include "aufgabe4.h"
 
 void manipulate(int command, char* argv[]) {
-    char *path;
     DIR *dir;
     struct dirent *dDirent;
+
+    FILE *fIn, *fOut;
+    char rec[BUF_SIZE];
+    size_t bytesIn, bytesOut;
 
     switch(command) {
         case MAKEDIR:
@@ -21,11 +24,17 @@ void manipulate(int command, char* argv[]) {
             rmdir(argv[1]);
             return;
         case COPY:
-            path = "/bin/cp";
-            break;
+            fIn = fopen(argv[1], "rb");
+            fOut = fopen(argv[2], "wb");
+            while((bytesIn = fread(rec, 1, BUF_SIZE, fIn)) > 0) {
+                fwrite(rec, 1, bytesIn, fOut);
+            }
+            fclose(fIn);
+            fclose(fOut);
+            return;
         case RENAME:
-            path = "/bin/mv";
-            break;
+            rename(argv[1], argv[2]);
+            return;
         case TREE:
             dir = opendir(argv[1]);
             dDirent = readdir(dir);
@@ -37,6 +46,4 @@ void manipulate(int command, char* argv[]) {
 
             return;
     }
-
-    execv(path, argv);
 }

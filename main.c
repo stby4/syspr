@@ -38,10 +38,10 @@ int main(int argc, char* argv[]) {
     // Aufgabe 4
     char *cMakedir[] = {"", "/home/hinrich/Downloads/newdirectory"};
     manipulate(MAKEDIR, cMakedir);
-    //char *cCopy[] = {"", "/home/hinrich/Downloads/copythis", "/home/hinrich/Downloads/task4copied"};
-    //manipulate(COPY, cCopy);
-    //char *cRename[] = {"", "/home/hinrich/Downloads/task4copied", "/home/hinrich/Downloads/task4renamed"};
-    //manipulate(RENAME, cRename);
+    char *cCopy[] = {"", "/home/hinrich/Downloads/copythis", "/home/hinrich/Downloads/task4copied"};
+    manipulate(COPY, cCopy);
+    char *cRename[] = {"", "/home/hinrich/Downloads/task4copied", "/home/hinrich/Downloads/task4renamed"};
+    manipulate(RENAME, cRename);
     char *cRemoveDir[] = {"", "/home/hinrich/Downloads/newdirectory"};
     manipulate(REMOVEDIR, cRemoveDir);
     char *cTree[] = {"", "/home/hinrich/Downloads"};

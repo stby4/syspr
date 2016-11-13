@@ -11,6 +11,8 @@
 #define COPY 3
 #define RENAME 4
 
+#define BUF_SIZE 256
+
 void manipulate(int command, char* argv[]);
 
 #endif //SYSPR_TEST1_PREPARE_AUFGABE4_H
