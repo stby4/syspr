@@ -10,5 +10,8 @@
 #include "aufgabe3.h"
 #include "aufgabe4.h"
 #include "aufgabe5.h"
+#include "aufgabe6.h"
+#include "hs15_5.h"
+
 
 #endif //SYSPR_TEST1_PREPARE_MAIN_H

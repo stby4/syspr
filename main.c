@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
+
 
 int main(int argc, char* argv[]) {
 
@@ -53,5 +55,10 @@ int main(int argc, char* argv[]) {
     char* cParams5[] = {"", "/home/hinrich/Downloads/copythis", "/home/hinrich/Downloads/tothis"};
     aufgabe5(cParams5);
 
-    return 1;
+
+    // HS15, 5, Part 2
+    char* cParams15_5[] = {"", "/home/hinrich/Downloads/copythis", "/home/hinrich/Downloads/copyorcancel"};
+    copyCancelable(cParams15_5);
+
+    exit(1);
 }
